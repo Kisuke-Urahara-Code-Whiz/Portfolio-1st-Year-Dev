@@ -1,0 +1,274 @@
+/* Smooth scrolling */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Glow effect class */
+.glow {
+    box-shadow: 0 0 20px 5px rgba(255, 255, 255, 0.8); /* White glow */
+}
+
+
+
+
+body {
+    background-color: #121212; /* Dark background */
+    color: white; /* Text color */
+}
+
+.navbar {
+    font-family: 'Lucida Handwriting', cursive; /* Set font for navbar */
+    height: 70px; /* Increased height of the navbar */
+}
+
+.navbar-collapse {
+    background-color: #343a40; /* Background color for the collapsed navbar */
+    position: absolute; /* Position the dropdown absolutely */
+    top: 70px; /* Position it right below the navbar */
+    left: 0; /* Align to the left */
+    right: 0; /* Align to the right */
+    z-index: 1000; /* Ensure it appears above other elements */
+}
+
+.navbar-nav .nav-link {
+    padding: 15px 20px; /* Increased padding for better spacing */
+}
+
+.profile-circle {
+    width: 250px; /* Diameter of the circle */
+    height: 250px; /* Diameter of the circle */
+    border: 5px solid black; /* Black border */
+    border-radius: 50%; /* Make it a circle */
+    background-color: #ffffff; /* White background for the circle */
+    margin: 50px auto; /* Center the circle with some space above */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden; /* Ensure image doesn't overflow */
+    transition: transform 0.3s; /* Smooth transition for transform */
+}
+
+.profile-image {
+    width: 100%; /* Image width to fill the circle */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 50%; /* Make the image circular */
+}
+
+.profile-circle:hover {
+    transform: scale(1.2); /* Scale up the entire circle */
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.8); /* Glow effect on hover */
+}
+
+.name {
+    text-align: center; /* Center the name */
+    margin-top: 10px; /* Space above the name */
+    font-family: 'Lucida Handwriting', cursive; /* Set font to Lucida Handwriting */
+    font-size: 30px; /* Font size for the name */
+    font-weight: bold; /* Make the name bold */
+}
+
+.nickname {
+    text-align: center; /* Center the nickname */
+    margin-top: 5px; /* Space above the nickname */
+    font-family: 'Lucida Handwriting', cursive; /* Set font to Lucida Handwriting */
+    font-size: 24px; /* Font size for the nickname */
+}
+
+.age {
+    text-align: center; /* Center the age */
+    margin-top: 5px; /* Space above the age */
+    font-family: 'Lucida Handwriting', cursive; /* Set font to Lucida Handwriting */
+    font-size: 24px; /* Font size for the age */
+}
+
+.underline {
+    width: calc(100% - 40px); /* Full width minus some gap on each side */
+    height: 2px; /* Height of the underline */
+    background-color: white; /* Color of the underline */
+    margin: 15px auto; /* Increased space above the underline */
+}
+
+.education, .degree {
+    text-align: center; /* Center the education and degree sections */
+    margin-top: 10px; /* Space above the sections */
+    font-family: 'Lucida Handwriting', cursive; /* Set font to Lucida Handwriting */
+    font-size: 20px; /* Font size for the text */
+}
+
+.education i, .degree i {
+    margin-right: 5px; /* Space between icon and text */
+    color: white; /* Icon color */
+}
+
+/* About Me Section */
+.about-me-section {
+    background-color: white; /* White background */
+    color: black; /* Black font color */
+    text-align: center; /* Center align text */
+    margin: 30px auto; /* Spacing around the section */
+    padding: 20px; /* Padding inside the section */
+    width: 80%; /* Width of the section */
+    border-radius: 8px; /* Rounded corners for a modern look */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+.about-me-title {
+    font-size: 28px; /* Font size for the title */
+    font-family: 'Lucida Handwriting', cursive; /* Set font for the title */
+    font-weight: bold; /* Make the title bold */
+}
+
+.about-me-content {
+    font-size: 19px; /* Font size for content */
+    font-family: "Britannic Bold"; /* Set font for content */
+    line-height: 1.5; /* Increase line height for readability */
+    margin: 10px 0; /* Space above and below paragraphs */
+}
+
+/* Skills Section */
+.skills-section {
+    display: flex; /* Use flexbox layout */
+    flex-wrap: wrap; /* Allow items to wrap to the next line */
+    justify-content: center; /* Center items */
+    background-color: white; /* White background */
+    color: black; /* Black font color */
+    text-align: center; /* Center align text */
+    margin: 30px auto; /* Spacing around the section */
+    padding: 20px; /* Padding inside the section */
+    width: 80%; /* Width of the section */
+    border-radius: 8px; /* Rounded corners for a modern look */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+.skills-title {
+    font-size: 28px; /* Font size for the title */
+    font-family: 'Lucida Handwriting', cursive; /* Set font for the title */
+    font-weight: bold; /* Make the title bold */
+    width: 100%; /* Full width for title */
+    text-align: center; /* Center title */
+}
+
+.skill-item {
+    margin: 15px; /* Spacing around each skill item */
+    text-align: center; /* Center text under the image */
+    flex: 0 1 120px; /* Allow flexible width, with a minimum width of 120px */
+}
+
+.skill-icon {
+    width: 70px; /* Increased size of the icons */
+    height: 70px; /* Increased size of the icons */
+}
+
+/* Bolder text under images */
+.skill-text {
+    font-weight: bold; /* Make the skill text bold */
+    margin-top: 5px; /* Space above the text */
+}
+
+.skill-item:hover {
+    background-color: rgba(255, 255, 255, 0.1); /* Light background on hover */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); /* Subtle shadow on hover */
+    transition: background-color 0.3s, box-shadow 0.3s; /* Smooth transition */
+}
+
+/* Skills Learning Section */
+.skills-learning-section {
+    background-color: white; /* White background */
+    color: black; /* Black font color */
+    text-align: center; /* Center align text */
+    margin: 30px auto; /* Spacing around the section */
+    padding: 20px; /* Padding inside the section */
+    width: 80%; /* Width of the section */
+    border-radius: 8px; /* Rounded corners for a modern look */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+.skills-learning-title {
+    font-size: 28px; /* Font size for the title */
+    font-family: 'Lucida Handwriting', cursive; /* Set font for the title */
+    font-weight: bold; /* Make the title bold */
+}
+
+/* Container for Projects and Contact Me sections */
+.projects-contact-container {
+    display: flex; /* Use flexbox layout */
+    justify-content: space-between; /* Space between the sections */
+    margin: 30px 20px; /* Margin around the container */
+}
+
+/* Projects Section */
+.projects-section {
+    background-color: white; /* White background */
+    color: black; /* Black text color */
+    text-align: center; /* Center align text */
+    padding: 20px; /* Padding inside the section */
+    width: calc(50% - 10px); /* Width of the section with space for margin */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+
+
+/* Title styles for Projects  */
+.projects-title {
+    font-size: 28px; /* Font size for the title */
+    font-family: 'Lucida Handwriting', cursive; /* Set font for the title */
+    font-weight: bold; /* Make the title bold */
+    margin-bottom: 15px; /* Space below the title */
+}
+
+.project-list {
+    display: flex; /* Use flexbox layout */
+    flex-wrap: wrap; /* Allow items to wrap to the next line */
+    justify-content: center; /* Center items */
+}
+
+.project-item {
+    margin: 15px; /* Space around each project link */
+    font-family: "Britannic Bold"; /* Set font style */
+    font-size: 20px; /* Slightly larger font size */
+    padding: 10px; /* Padding around text */
+    border: 2px solid transparent; /* Transparent border for hover effect */
+    border-radius: 4px; /* Slight rounding of corners */
+    transition: all 0.3s ease; /* Smooth transition for hover effects */
+    text-decoration: none; /* Remove underline */
+    color: black; /* Black text color */
+    display: flex; /* Use flexbox for centering */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    width: 150px; /* Set a width for consistent box sizes */
+    height: 60px; /* Set a height for consistent box sizes */
+    text-align: center; /* Center the text */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Thick box shadow on all sides */
+}
+
+.project-item:hover {
+    border: 2px solid rgba(255, 255, 255, 0.5); /* Light border on hover */
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.7), 0 0 30px rgba(0, 0, 0, 0.5); /* Thick glow effect on hover */
+    background-color: rgba(255, 255, 255, 0.1); /* Add a slight background color on hover */
+    transform: scale(1.05); /* Slightly increase the size of the box */
+}
+
+.footer {
+    text-align: center; /* Center align text in footer */
+    margin: 20px 0; /* Margin above and below the footer */
+}
+
+.social-icons {
+    display: flex; /* Use flexbox for horizontal layout */
+    justify-content: center; /* Center the icons */
+    margin-top: 10px; /* Space above the icons */
+}
+
+.icon {
+    width: 30px; /* Set the desired width for the icons */
+    height: 30px; /* Set the desired height for the icons */
+    margin: 0 10px; /* Space between icons */
+    transition: transform 0.3s; /* Smooth transition for hover effect */
+}
+
+.icon:hover {
+    transform: scale(1.1); /* Slightly enlarge icon on hover */
+}
+
+
