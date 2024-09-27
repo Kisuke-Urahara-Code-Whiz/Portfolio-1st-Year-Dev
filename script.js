@@ -27,5 +27,12 @@ navLinks.forEach(link => {
 
         // Add the glow effect to the target section
         addGlowEffect(targetSection);
+
+        // Find the parent element of the navbar collapse
+        const navbarCollapse = document.querySelector('.navbar-collapse');
+        const bsCollapse = new bootstrap.Collapse(navbarCollapse, {
+            toggle: false
+        });
+        bsCollapse.hide(); // Close the dropdown
     });
 });
